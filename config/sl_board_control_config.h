@@ -39,7 +39,7 @@
 
 // <q SL_BOARD_ENABLE_DISPLAY> Enable Display
 // <i> Default: 0
-#define SL_BOARD_ENABLE_DISPLAY                 0
+#define SL_BOARD_ENABLE_DISPLAY                 1
 
 // <q SL_BOARD_ENABLE_SENSOR_RHT> Enable Relative Humidity and Temperature sensor
 // <i> Default: 0
@@ -47,7 +47,7 @@
 
 // <q SL_BOARD_DISABLE_MEMORY_SPI> Disable SPI Flash
 // <i> Default: 1
-#define SL_BOARD_DISABLE_MEMORY_SPI             1
+#define SL_BOARD_DISABLE_MEMORY_SPI             0
 
 // <<< end of configuration section >>>
 

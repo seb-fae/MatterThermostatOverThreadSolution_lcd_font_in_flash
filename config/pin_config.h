@@ -86,22 +86,6 @@
 // [TIMER4]$
 
 // $[USART0]
-// USART0 CLK on PC03
-#ifndef USART0_CLK_PORT                         
-#define USART0_CLK_PORT                          SL_GPIO_PORT_C
-#endif
-#ifndef USART0_CLK_PIN                          
-#define USART0_CLK_PIN                           3
-#endif
-
-// USART0 TX on PC01
-#ifndef USART0_TX_PORT                          
-#define USART0_TX_PORT                           SL_GPIO_PORT_C
-#endif
-#ifndef USART0_TX_PIN                           
-#define USART0_TX_PIN                            1
-#endif
-
 // [USART0]$
 
 // $[I2C1]
@@ -124,6 +108,22 @@
 // [I2C1]$
 
 // $[EUSART1]
+// EUSART1 SCLK on PC03
+#ifndef EUSART1_SCLK_PORT                       
+#define EUSART1_SCLK_PORT                        SL_GPIO_PORT_C
+#endif
+#ifndef EUSART1_SCLK_PIN                        
+#define EUSART1_SCLK_PIN                         3
+#endif
+
+// EUSART1 TX on PC01
+#ifndef EUSART1_TX_PORT                         
+#define EUSART1_TX_PORT                          SL_GPIO_PORT_C
+#endif
+#ifndef EUSART1_TX_PIN                          
+#define EUSART1_TX_PIN                           1
+#endif
+
 // [EUSART1]$
 
 // $[KEYSCAN]

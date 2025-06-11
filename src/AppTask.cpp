@@ -105,10 +105,14 @@ CHIP_ERROR AppTask::Init()
     return err;
 }
 
+extern void memlcd_app_init(SilabsLCD lcd);
+
 CHIP_ERROR AppTask::StartAppTask()
 {
     return BaseApplication::StartAppTask(AppTaskMain);
 }
+
+extern "C" void initLDMA(void);
 
 void AppTask::AppTaskMain(void * pvParameter)
 {
@@ -116,6 +120,10 @@ void AppTask::AppTaskMain(void * pvParameter)
     osMessageQueueId_t sAppEventQueue = *(static_cast<osMessageQueueId_t *>(pvParameter));
 
     CHIP_ERROR err = sAppTask.Init();
+
+    // LCD is initialised here
+    memlcd_app_init(AppTask::GetLCD());
+
     if (err != CHIP_NO_ERROR)
     {
         SILABS_LOG("AppTask.Init() failed");
@@ -159,6 +167,9 @@ void AppTask::UpdateThermoStatUI()
                TempMgr().GetHeatingSetPoint(), TempMgr().GetCoolingSetPoint());
 #endif // DISPLAY_ENABLED
 }
+void start_demo();
+void stop_demo();
+
 
 void AppTask::ButtonEventHandler(uint8_t button, uint8_t btnAction)
 {
@@ -168,7 +179,14 @@ void AppTask::ButtonEventHandler(uint8_t button, uint8_t btnAction)
 
     if (button == APP_FUNCTION_BUTTON)
     {
+        if (btnAction == 1)
+          stop_demo();
+
         aEvent.Handler = BaseApplication::ButtonHandler;
         sAppTask.PostEvent(&aEvent);
     }
+    else if (button == 1 && btnAction == 1)
+    // Button one pressed
+        start_demo();
+
 }

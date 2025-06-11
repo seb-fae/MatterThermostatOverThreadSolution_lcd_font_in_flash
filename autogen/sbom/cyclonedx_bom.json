@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2025-06-04T18:51:59.277039400Z",
+    "timestamp" : "2025-06-04T19:45:32.277330800Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -1907,18 +1907,6 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:emlib_syscfg",
       "name" : "SYSCFG",
-      "version" : "2024.12.2",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2024.12.2:memlcd_usart",
-      "name" : "Memory LCD with usart SPI driver",
       "version" : "2024.12.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -4959,6 +4947,18 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2024.12.2:gpio",
       "name" : "GPIO Driver",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:memlcd_eusart",
+      "name" : "Memory LCD with eusart SPI driver",
       "version" : "2024.12.2",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

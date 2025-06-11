@@ -73,6 +73,7 @@ component:
 - {id: brd4186c}
 - {id: clock_manager}
 - {id: device_init}
+- {id: memlcd_eusart}
 - {id: ot_stack_ftd}
 - {id: rail_util_pti}
 - {id: sl_system}

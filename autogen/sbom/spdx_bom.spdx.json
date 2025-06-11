@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2025-06-04T18:51:59.277039400Z",
+    "created" : "2025-06-04T19:45:32.277330800Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -1252,14 +1252,6 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_syscfg",
     "name" : "SYSCFG",
-    "versionInfo" : "2024.12.2",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-memlcd_usart",
-    "name" : "Memory LCD with usart SPI driver",
     "versionInfo" : "2024.12.2",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -3194,6 +3186,14 @@
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-memlcd_eusart",
+    "name" : "Memory LCD with eusart SPI driver",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
   } ],
   "relationships" : [ {
     "spdxElementId" : "SPDXRef-DOCUMENT",
@@ -3806,10 +3806,6 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_syscfg",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-memlcd_usart",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
@@ -4718,6 +4714,10 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-memlcd_eusart",
     "relationshipType" : "CONTAINS"
   } ]
 }

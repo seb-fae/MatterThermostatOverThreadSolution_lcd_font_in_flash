@@ -10,7 +10,7 @@
     <properties key="projectCommon.kitId" value=""/>
     <properties key="projectCommon.partId" value="mcu.arm.efr32.mg24.efr32mg24b210f1536im48"/>
     <properties key="universalConfig.projectTypeIds" value="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType"/>
-    <properties key="projectCommon.importModeId" value="LINK_LIBRARIES"/>
+    <properties key="projectCommon.importModeId" value="COPY"/>
     <properties key="universalConfig.compSelProjInstanceId" value="1749063133813"/>
   </descriptors>
 </model:MDescriptors>
