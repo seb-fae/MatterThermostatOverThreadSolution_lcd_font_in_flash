@@ -4,6 +4,14 @@ The EFR32 Thermostat example provides a baseline demonstration of a thermostat
 device, built using Matter and the Silicon Labs Gecko SDK. It can be controlled
 by a Matter controller over an Openthread network.
 
+This example uses an external SPI FLASH to stores a 1bpp 32x64 font. When user 
+presses a button, a internal counter is incremented and its value is displayed 
+on LCD using font stored in Spi flash. LCD and SPI flash accesses are accelerated
+by LDMA.
+
+All LCD and Spi Flash operation will be blocked (not consuming any CPU time and
+letting other tasks run) waiting for end of DMA operation.
+
 The EFR32 device can be commissioned over Bluetooth Low Energy where the device
 and the Matter controller will exchange security information with the Rendez-vous
 procedure. If using Thread, Thread Network credentials are then provided to the
@@ -21,9 +29,7 @@ For more general information on running matter applications and pre-requisites p
 documentation for Matter available on docs.silabs.com. Follow Thread demo instructions depending on the example you are running.
 [Demo instructions for Thread](https://docs.silabs.com/matter/2.5.2/matter-thread)
 
-This example uses an external SPI FLASH to stores a 1bpp 32x64 font. When user presses a button, a internal counter is incremented and its value is displayed on LCD using font stored in Spi flash. LCD and SPI flash accesses are accelerated by LDMA.
 
-All LCD and Spi Flash operation will be blocked (not consuming any CPU time and letting other tasks run) waiting for end of DMA operation.
 
 ## Thermostat Application User Interface
 
